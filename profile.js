@@ -84,7 +84,7 @@ window.PROFILE = {
     {
       authors: "(with G. Wang)",
       title: String.raw`Stability of spinorial Sobolev inequalities on $\mathbb{S}^n$`,
-      venue: "", // Journal, volume, pages, year, or "Preprint".
+      venue: "Advances in Mathematics 505 (2026)", // Journal, volume, pages, year, or "Preprint".
       links: [
         { label: "arXiv", url: "arXiv:2508.09047" },
         { label: "journal", url: "" }
@@ -93,7 +93,7 @@ window.PROFILE = {
     {
       authors: "(with Q. Chen)",
       title: "Dirac-geodesics with curvature term",
-      venue: "Science China Mathematics 68 (2), 433-446", // Journal, volume, pages, year, or "Preprint".
+      venue: "Science China Mathematics 68.2 (2025), 433-446", // Journal, volume, pages, year, or "Preprint".
       links: [
         { label: "arXiv", url: "" },
         { label: "journal", url: "" }
