@@ -78,6 +78,8 @@
   const institution = setField("institution", profile.institution);
   const research = setField("research-interests", profile.researchInterests);
   research.parentElement.hidden = research.hidden;
+  setField("birthday", text(profile.birthday) ? "Birthday: " + text(profile.birthday) : "");
+  setField("birthplace", text(profile.birthplace) ? "Birthplace: " + text(profile.birthplace) : "");
   const address = document.getElementById("address");
   address.replaceChildren();
   (Array.isArray(profile.addressLines) ? profile.addressLines : []).map(text).filter(Boolean).forEach((value) => {
@@ -155,11 +157,37 @@
     ? JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", name: siteName, url: siteUrl })
     : "";
   const footerText = document.getElementById("footer-text");
-  footerText.textContent = [name, text(profile.lastUpdated) ? "Last updated: " + text(profile.lastUpdated) : ""].filter(Boolean).join(" · ");
-  footerText.hidden = !footerText.textContent;
   const backToTop = document.querySelector('footer a[href="#home"]');
   backToTop.hidden = !hasSections || header.hidden;
-  document.querySelector("footer").hidden = footerText.hidden && backToTop.hidden;
+  const renderFooter = (updated) => {
+    footerText.textContent = [name, updated ? "Last updated: " + updated : ""].filter(Boolean).join(" · ");
+    footerText.hidden = !footerText.textContent;
+    document.querySelector("footer").hidden = footerText.hidden && backToTop.hidden;
+  };
+  const lastUpdated = text(profile.lastUpdated);
+  renderFooter(lastUpdated === "auto" ? "" : lastUpdated);
+  if (lastUpdated === "auto") {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 6000);
+    fetch("https://api.github.com/repos/zhangmwmath/zhangmwmath.github.io/commits?sha=main&per_page=1", {
+      headers: { Accept: "application/vnd.github+json" },
+      credentials: "omit",
+      signal: controller.signal
+    }).then((response) => {
+      if (!response.ok) throw new Error("Unable to load the last update date.");
+      return response.json();
+    }).then((commits) => {
+      const timestamp = commits?.[0]?.commit?.committer?.date;
+      if (typeof timestamp !== "string" || !timestamp.trim()) return;
+      const date = new Date(timestamp);
+      if (!Number.isFinite(date.getTime())) return;
+      renderFooter(new Intl.DateTimeFormat("en-US", {
+        year: "numeric", month: "long", day: "numeric", timeZone: "UTC"
+      }).format(date));
+    }).catch(() => {
+      // Keep the date hidden if GitHub is unavailable; never use the visit date.
+    }).finally(() => clearTimeout(timeout));
+  }
   if (typeof window.renderMathInElement === "function") {
     window.renderMathInElement(document.getElementById("main"), {
       delimiters: [

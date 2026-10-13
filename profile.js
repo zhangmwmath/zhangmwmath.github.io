@@ -14,8 +14,10 @@ window.PROFILE = {
   addressLines: ["Ernst-Zermelo-Str. 1", "Room 213"],
   email: "mingwei.zhang@math.uni-freiburg.de",
   researchInterests: "Geometric analysis",
+  birthday: "To be added", // Replace with your birthday, or use "" to hide it.
+  birthplace: "To be added", // Replace with your birthplace, or use "" to hide it.
   cv: "", // Example: "assets/cv.pdf" after adding your actual PDF.
-  lastUpdated: "", // Example: "October 2026". Optional.
+  lastUpdated: "auto", // "auto": latest GitHub commit date; "": hide; or enter a date manually.
 
   publications: [
     {
