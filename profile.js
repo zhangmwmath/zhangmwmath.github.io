@@ -15,7 +15,7 @@ window.PROFILE = {
   email: "mingwei.zhang@math.uni-freiburg.de",
   researchInterests: "Geometric analysis",
   birthday: "March 25, 1999", // Replace with your birthday, or use "" to hide it.
-  birthplace: "Yixing, China", // Replace with your birthplace, or use "" to hide it.
+  birthplace: "Yixing, Jiangsu, China", // Replace with your birthplace, or use "" to hide it.
   cv: "", // Example: "assets/cv.pdf" after adding your actual PDF.
   lastUpdated: "auto", // "auto": latest GitHub commit date; "": hide; or enter a date manually.
 
@@ -115,8 +115,8 @@ window.PROFILE = {
     {
       title: "The sharp curl-Sobolev inequality",
       event: "IRTG 3132 Retreat",
-      location: "Fraueninsel, Chiemsee",
-      date: "July 17, 2026",
+      location: "Palazzone di Cortona, Cortona",
+      date: "October 13, 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
