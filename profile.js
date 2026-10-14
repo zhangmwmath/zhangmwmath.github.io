@@ -14,8 +14,8 @@ window.PROFILE = {
   addressLines: ["Ernst-Zermelo-Str. 1", "Room 213"],
   email: "mingwei.zhang@math.uni-freiburg.de",
   researchInterests: "Geometric analysis",
-  birthday: "To be added", // Replace with your birthday, or use "" to hide it.
-  birthplace: "To be added", // Replace with your birthplace, or use "" to hide it.
+  birthday: "March 25, 1999", // Replace with your birthday, or use "" to hide it.
+  birthplace: "Yixing, China", // Replace with your birthplace, or use "" to hide it.
   cv: "", // Example: "assets/cv.pdf" after adding your actual PDF.
   lastUpdated: "auto", // "auto": latest GitHub commit date; "": hide; or enter a date manually.
 
@@ -86,7 +86,7 @@ window.PROFILE = {
     {
       authors: "(with G. Wang)",
       title: String.raw`Stability of spinorial Sobolev inequalities on $\mathbb{S}^n$`,
-      venue: "Advances in Mathematics 505 (2026)", // Journal, volume, pages, year, or "Preprint".
+      venue: "Advances in Mathematics 505. (2026)", // Journal, volume, pages, year, or "Preprint".
       links: [
         { label: "arXiv", url: "arXiv:2508.09047" },
         { label: "journal", url: "" }
@@ -95,7 +95,7 @@ window.PROFILE = {
     {
       authors: "(with Q. Chen)",
       title: "Dirac-geodesics with curvature term",
-      venue: "Science China Mathematics 68.2 (2025), 433-446", // Journal, volume, pages, year, or "Preprint".
+      venue: "Science China Mathematics. 68.2 (2025), 433-446", // Journal, volume, pages, year, or "Preprint".
       links: [
         { label: "arXiv", url: "" },
         { label: "journal", url: "" }
@@ -114,7 +114,15 @@ window.PROFILE = {
   talks: [
     {
       title: "The sharp curl-Sobolev inequality",
-      event: "",
+      event: "IRTG 3132 Retreat",
+      location: "Fraueninsel, Chiemsee",
+      date: "July 17, 2026",
+      note: "", // Optional, for example a joint-work credit.
+      links: [{ label: "slides", url: "" }]
+    },
+    {
+      title: "The sharp curl-Sobolev inequality",
+      event: "IRTG 3132 Workshop",
       location: "Fraueninsel, Chiemsee",
       date: "July 17, 2026",
       note: "", // Optional, for example a joint-work credit.
