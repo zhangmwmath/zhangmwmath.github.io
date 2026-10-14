@@ -182,7 +182,7 @@
       const date = new Date(timestamp);
       if (!Number.isFinite(date.getTime())) return;
       renderFooter(new Intl.DateTimeFormat("en-US", {
-        year: "numeric", month: "long", day: "numeric", timeZone: "UTC"
+        year: "numeric", month: "long", day: "numeric", timeZone: "Europe/Rome"
       }).format(date));
     }).catch(() => {
       // Keep the date hidden if GitHub is unavailable; never use the visit date.
