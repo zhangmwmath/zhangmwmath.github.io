@@ -115,7 +115,7 @@ window.PROFILE = {
     {
       title: "The sharp curl-Sobolev inequality",
       event: "IRTG 3132 Retreat",
-      location: "Palazzone di Cortona, Cortona",
+      location: "Scuola Normale Superiore, Cortona",
       date: "October 13, 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
