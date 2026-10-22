@@ -21,6 +21,15 @@ window.PROFILE = {
 
   publications: [
     {
+      authors: "",
+      title: "The sharp Chern-Simons-Sobolev inequality and its variants",
+      venue: "", // Journal, volume, pages, year, or "Preprint".
+      links: [
+        { label: "arXiv", url: "arXiv:2610.29769" },
+        { label: "journal", url: "" }
+      ]
+    },
+    {
       authors: "(with Q. Chen and G. Wang)",
       title: String.raw`Harmonic maps from $\mathbb{S}^{2n+1}$ into $\mathbb{CP}^n$ with least Morse index`,
       venue: "", // Journal, volume, pages, year, or "Preprint".
