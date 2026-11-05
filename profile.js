@@ -22,6 +22,15 @@ window.PROFILE = {
   publications: [
     {
       authors: "",
+      title: "An $L^2$ Ahlfors--Beurling inequality in every dimension",
+      venue: "", // Journal, volume, pages, year, or "Preprint".
+      links: [
+        { label: "arXiv", url: "arXiv:2610.37886" },
+        { label: "journal", url: "" }
+      ]
+    },
+    {
+      authors: "",
       title: "The sharp Chern-Simons-Sobolev inequality and its variants",
       venue: "", // Journal, volume, pages, year, or "Preprint".
       links: [
