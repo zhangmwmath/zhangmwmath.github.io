@@ -17,8 +17,10 @@ window.PROFILE = {
   Born: "25 March 1999 in Yixing, Jiangsu, China", // Replace with your birthday, or use "" to hide it.
   cv: "", // Example: "assets/cv.pdf" after adding your actual PDF.
   escherImage: "", // After uploading your image, enter its path, e.g. "assets/Escher.jpg".
-  personalInterests: [
-    // "One interest per line",
+    personalInterests: [
+    "Metaphysics (especially free will and causality)",
+    "History (of China and Europe)",
+    "Astronomy and science fiction",
   ],
   lastUpdated: "auto", // "auto": latest GitHub commit date; "": hide; or enter a date manually.
 
