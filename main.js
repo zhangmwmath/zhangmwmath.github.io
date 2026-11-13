@@ -78,8 +78,11 @@
   const institution = setField("institution", profile.institution);
   const research = setField("research-interests", profile.researchInterests);
   research.parentElement.hidden = research.hidden;
-  setField("birthday", text(profile.birthday) ? "Birthday: " + text(profile.birthday) : "");
-  setField("birthplace", text(profile.birthplace) ? "Birthplace: " + text(profile.birthplace) : "");
+  const born = typeof profile.Born === "string"
+    ? text(profile.Born)
+    : [text(profile.birthday), text(profile.birthplace)].filter(Boolean).join(" in ");
+  const bornField = document.getElementById("born") ? "born" : "birthday";
+  setField(bornField, born ? "Born " + born : "");
   const address = document.getElementById("address");
   address.replaceChildren();
   (Array.isArray(profile.addressLines) ? profile.addressLines : []).map(text).filter(Boolean).forEach((value) => {
