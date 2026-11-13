@@ -135,7 +135,7 @@ window.PROFILE = {
       title: "The sharp curl-Sobolev inequality",
       event: "IRTG 3132 Retreat",
       location: "Scuola Normale Superiore, Cortona",
-      date: "October 13, 2026",
+      date: "13 October 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -143,7 +143,7 @@ window.PROFILE = {
       title: "The sharp curl-Sobolev inequality",
       event: "IRTG 3132 Workshop",
       location: "Fraueninsel, Chiemsee",
-      date: "July 17, 2026",
+      date: "17 July 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -151,7 +151,7 @@ window.PROFILE = {
       title: "Harmonic maps with least Morse index",
       event: "",
       location: "Peking University, Beijing",
-      date: "June 18, 2026",
+      date: "18 June 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -159,7 +159,7 @@ window.PROFILE = {
       title: "Conformal invariants for the Dirac equation",
       event: "",
       location: "Xiangtan University, Xiangtan",
-      date: "April 07, 2026",
+      date: "07 April 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -167,7 +167,7 @@ window.PROFILE = {
       title: "Conformal invariants for the Dirac equation",
       event: "",
       location: "Southeast University, Nanjing",
-      date: "March 24, 2026",
+      date: "24 March 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -175,7 +175,7 @@ window.PROFILE = {
       title: "Conformal invariants for the Dirac equation",
       event: "",
       location: "Nanjing University, Nanjing",
-      date: "March 23, 2026",
+      date: "23 March 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -183,7 +183,7 @@ window.PROFILE = {
       title: "Various optimal Sobolev inequalities",
       event: "2026 Geometric Analysis Spring Conference",
       location: "University of Science and Technology of China, Hefei",
-      date: "March 18, 2026",
+      date: "18 March 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -191,7 +191,7 @@ window.PROFILE = {
       title: "Sobolev inequalities for differential forms",
       event: "",
       location: "University of Pisa and Scuola Normale Superiore, Pisa",
-      date: "February 19, 2026",
+      date: "19 February 2026",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -199,7 +199,7 @@ window.PROFILE = {
       title: "Various Sobolev inequalities and their stability",
       event: "Moduli Spaces of Canonical Metrics: Metric Riemannian Geometry and Topology",
       location: "MFO, Oberwolfach",
-      date: "November 24, 2025",
+      date: "24 November 2025",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     },
@@ -207,7 +207,7 @@ window.PROFILE = {
       title: "Spinorial Sobolev inequalities",
       event: "Peking-Westlake Geometric Analysis Seminar",
       location: "online",
-      date: "October 14, 2025",
+      date: "14 October 2025",
       note: "", // Optional, for example a joint-work credit.
       links: [{ label: "slides", url: "" }]
     }
