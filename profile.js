@@ -14,8 +14,7 @@ window.PROFILE = {
   addressLines: ["Ernst-Zermelo-Str. 1", "Room 213"],
   email: "mingwei.zhang@math.uni-freiburg.de",
   researchInterests: "Geometric analysis",
-  birthday: "March 25, 1999", // Replace with your birthday, or use "" to hide it.
-  birthplace: "Yixing, Jiangsu, China", // Replace with your birthplace, or use "" to hide it.
+  Born: "25 March 1999 in Yixing, Jiangsu, China", // Replace with your birthday, or use "" to hide it.
   cv: "", // Example: "assets/cv.pdf" after adding your actual PDF.
   escherImage: "", // After uploading your image, enter its path, e.g. "assets/Escher.jpg".
   personalInterests: "", // Text for Personal Interests Beyond Math.
