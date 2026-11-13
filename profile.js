@@ -21,6 +21,7 @@ window.PROFILE = {
     "Metaphysics (especially free will and causality)",
     "History (of China and Europe)",
     "Astronomy and science fiction",
+    "Music"
   ],
   lastUpdated: "auto", // "auto": latest GitHub commit date; "": hide; or enter a date manually.
 
