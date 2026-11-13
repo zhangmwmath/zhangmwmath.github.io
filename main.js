@@ -130,8 +130,17 @@
     else if (text(item.title)) node.append(text(item.title));
     if (text(item.description)) node.append((node.textContent ? " — " : "") + text(item.description));
   });
-  if (document.getElementById("personal-interests-text")) {
-    setField("personal-interests-text", profile.personalInterests);
+  const interestList = document.getElementById("personal-interests-list");
+  if (interestList) {
+    const interests = Array.isArray(profile.personalInterests)
+      ? profile.personalInterests
+      : [profile.personalInterests];
+    for (const interest of interests.map(text).filter(Boolean)) {
+      const item = document.createElement("li");
+      item.textContent = interest;
+      interestList.append(item);
+    }
+    interestList.hidden = !interestList.childElementCount;
   }
   const navigation = document.querySelector(".navigation");
   const hasSections = [...navigation.children].some((node) => !node.hidden);

@@ -150,7 +150,6 @@ h1 { margin: 0 0 13px; font-size: 38px; line-height: 1.3; letter-spacing: -.65px
 .cv { font-size: 15px; }
 section { padding-top: 20px; }
 h2 { margin: 0 0 12px; color: #25374b; font-size: 24px; line-height: 1.4; letter-spacing: -.25px; font-weight: 700; }
-#personal-interests-text { margin: 0; overflow-wrap: anywhere; white-space: pre-line; }
 .entry-list { margin: 0; padding-left: 23px; }
 .entry-list li { padding-left: 2px; margin-bottom: 9px; overflow-wrap: anywhere; }
 .entry-list li:last-child { margin-bottom: 0; }
