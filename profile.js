@@ -17,6 +17,8 @@ window.PROFILE = {
   birthday: "March 25, 1999", // Replace with your birthday, or use "" to hide it.
   birthplace: "Yixing, Jiangsu, China", // Replace with your birthplace, or use "" to hide it.
   cv: "", // Example: "assets/cv.pdf" after adding your actual PDF.
+  escherImage: "", // After uploading your image, enter its path, e.g. "assets/Escher.jpg".
+  personalInterests: "", // Text for Personal Interests Beyond Math.
   lastUpdated: "auto", // "auto": latest GitHub commit date; "": hide; or enter a date manually.
 
   publications: [

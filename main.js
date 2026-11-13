@@ -127,6 +127,9 @@
     else if (text(item.title)) node.append(text(item.title));
     if (text(item.description)) node.append((node.textContent ? " — " : "") + text(item.description));
   });
+  if (document.getElementById("personal-interests-text")) {
+    setField("personal-interests-text", profile.personalInterests);
+  }
   const navigation = document.querySelector(".navigation");
   const hasSections = [...navigation.children].some((node) => !node.hidden);
   navigation.hidden = !hasSections;
@@ -166,6 +169,19 @@
   };
   const lastUpdated = text(profile.lastUpdated);
   renderFooter(lastUpdated === "auto" ? "" : lastUpdated);
+  const escher = document.getElementById("escher-image");
+  const escherSrc = safeHref(profile.escherImage);
+  if (escher && escherSrc) {
+    escher.addEventListener("load", () => {
+      escher.hidden = false;
+      header.hidden = false;
+      if (hasSections) {
+        backToTop.hidden = false;
+        backToTop.parentElement.hidden = false;
+      }
+    }, { once: true });
+    escher.src = escherSrc;
+  }
   if (lastUpdated === "auto") {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 6000);
